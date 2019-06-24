@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/code.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="note">Swift One Liners</div>
+        <div class="section">
+            <div class="title">BASICS</div>
+            <div class="name">Fizz Buzz</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="keyword">func</span> runFizzBuzz() {
+    (<span class="number">1</span>...<span class="number">100</span>).<span class="call">forEach</span> { print($<span class="number">0</span>.<span class="call">isMultiple</span>(of: <span class="number">15</span>) ? <span class="string">"FizzBuzz"</span> : ($<span class="number">0</span>.<span class="call">isMultiple</span>(of: <span class="number">3</span>) ? <span class="string">"Fizz"</span> : ($<span class="number">0</span>.<span class="call">isMultiple</span>(of: <span class="number">5</span>) ? <span class="string">"Buzz"</span> : <span class="type">String</span>(describing: $0)))) }
+}</code></pre>
+            </section>
+            <div class="name">Fibonacci</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="keyword">func</span> fibonacci(at index: <span class="type">Int</span>) -> <span class="type">Int</span> {
+    <span class="keyword">return</span> index <= <span class="number">2</span> ? <span class="number">1</span> : <span class="call">fibonnaci</span>(at: index-<span class="number">1</span>) + <span class="call">fibonnaci</span>(at: index-<span class="number">2</span>)
+}</code></pre>
+            </section>
+        </div>
+    </body>
+
+    <div id="footer">Created by <a href="https://twitter.com/MicahTWilson">Micah Wilson</a>, <a href="https://twitter.com/SkankyToaster">Braden Scothern</a> and maybe <a href="https://twitter.com/avanalfen1">Austin Van Alfen</a> if he'll do something.</div>
+</html>
