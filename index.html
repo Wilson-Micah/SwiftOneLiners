@@ -29,7 +29,7 @@
             <div class="name">Problem 1</div>
             <section class="box" id="results" style="display: block;">
                 <pre><code><span class="keyword">func</span> sumMultiplesOfThreeAndFive(under upperBound: <span class="type">Int</span>) -> <span class="type">Int</span> {
-    <span class="keyword">return</span> (<span class="number">0</span>..<upperBound).<span class="property">lazy</span>.<span class="call">filter</span> { $0.<span class="call">isMultiple</span>(of: <span class="number">3</span>) || $0.<span class="call">isMultiple</span>(of: <span class="number">5</span>) }.<span class="call">reduce</span>(<span class="number">0</span>, +)
+    <span class="keyword">return</span> (<span class="number">0</span>..&lt;upperBound).<span class="property">lazy</span>.<span class="call">filter</span> { $0.<span class="call">isMultiple</span>(of: <span class="number">3</span>) || $0.<span class="call">isMultiple</span>(of: <span class="number">5</span>) }.<span class="call">reduce</span>(<span class="number">0</span>, +)
 }</code></pre>
         </section>
         <div class="name">Problem 2</div>
