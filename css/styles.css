@@ -55,6 +55,10 @@ body * {
 }
 
 #note {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
     font-size: 1.5em;
     color: #fff;
     text-align: center;
@@ -62,6 +66,18 @@ body * {
     background: #414141;
     font-weight: 300;
     letter-spacing: 0.05em;
+}
+
+#noteHeader {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+#fork {
+    margin-top: 2px;
 }
 
 #footer {
