@@ -13,14 +13,59 @@
     (<span class="number">1</span>...<span class="number">100</span>).<span class="call">forEach</span> { print($<span class="number">0</span>.<span class="call">isMultiple</span>(of: <span class="number">15</span>) ? <span class="string">"FizzBuzz"</span> : ($<span class="number">0</span>.<span class="call">isMultiple</span>(of: <span class="number">3</span>) ? <span class="string">"Fizz"</span> : ($<span class="number">0</span>.<span class="call">isMultiple</span>(of: <span class="number">5</span>) ? <span class="string">"Buzz"</span> : <span class="type">String</span>(describing: $0)))) }
 }</code></pre>
             </section>
-            <div class="name">Fibonacci</div>
+            <div class="name">Fibonacci Recursively</div>
             <section class="box" id="results" style="display: block;">
                 <pre><code><span class="keyword">func</span> fibonacci(at index: <span class="type">Int</span>) -> <span class="type">Int</span> {
     <span class="keyword">return</span> index <= <span class="number">2</span> ? <span class="number">1</span> : <span class="call">fibonacci</span>(at: index-<span class="number">1</span>) + <span class="call">fibonacci</span>(at: index-<span class="number">2</span>)
 }</code></pre>
             </section>
+            <div class="name">Fibonacci Iteratively</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+            </section>
+        </div>
+        <div class="section">
+            <div class="title">PROJECT EULER</div>
+            <div class="name">Problem 1</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="keyword">func</span> sumMultiplesOfThreeAndFive(under upperBound: <span class="type">Int</span>) -> <span class="type">Int</span> {
+    <span class="keyword">return</span> (<span class="number">0</span>..<upperBound).<span class="property">lazy</span>.<span class="call">filter</span> { $0.<span class="call">isMultiple</span>(of: <span class="number">3</span>) || $0.<span class="call">isMultiple</span>(of: <span class="number">5</span>) }.<span class="call">reduce</span>(<span class="number">0</span>, +)
+}</code></pre>
+        </section>
+        <div class="name">Problem 2</div>
+        <section class="box" id="results" style="display: block;">
+            <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+        </section>
+        </section>
+        <div class="name">Problem 3</div>
+        <section class="box" id="results" style="display: block;">
+            <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+        </section>
+        </section>
+        <div class="name">Problem 4</div>
+        <section class="box" id="results" style="display: block;">
+            <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+        </section>
+        </section>
+        <div class="name">Problem 5</div>
+        <section class="box" id="results" style="display: block;">
+            <pre><code><span class="keyword">func</span> smallestMultipleDivisibleByEveryNumber(under: <span class="type">Int</span>) -> <span class="type">Int</span> {
+    <span class="keyword">return</span> (<span class="number">1</span>...).<span class="call">first</span> { currentNumber <span class="keyword">in</span> !(<span class="number">1</span>...under).<span class="property">lazy</span>.<span class="property">map</span>{ divisor <span class="keyword">in</span> currentNumber.<span class="call">isMultiple</span>(of: divisor) }.<span class="call">contains</span>(<span class="keyword">false</span>)}!
+}</code></pre>
+        </section>
+        </div>
+        <div class="section">
+            <div class="title">TREES</div>
+            <div class="name">Depth First Traversal</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+            </section>
+            <div class="name">Breadth First Traversal</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+            </section>
         </div>
     </body>
 
-    <div id="footer">Created by <a href="https://twitter.com/MicahTWilson">Micah Wilson</a>, <a href="https://twitter.com/SkankyToaster">Braden Scothern</a> and <a href="https://twitter.com/avanalfen1">Austin Van Alfen</a></div>
+    <div id="footer">Created by <a href="https://twitter.com/MicahTWilson">Micah Wilson</a>, <a href="https://twitter.com/SkankyToaster">Braden Scothern</a>, and <a href="https://twitter.com/avanalfen1">Austin Van Alfen</a></div>
 </html>
