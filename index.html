@@ -75,9 +75,38 @@
         </div>
         <div class="section">
             <div class="title">TREES</div>
+            <section class="box" id="results" style="display: block;">
+                <pre><code><span class="comment">// Tree Structure</span>
+
+<span class="keyword">class</span> TreeMember {
+    <span class="keyword">init</span>() {
+        <span class="call">assert</span>(<span class="keyword">self is</span> <span class="type">Node</span> || <span class="keyword">self is</span> <span class="type">Leaf</span>)
+    }
+}
+
+<span class="keyword">class</span> Node: <span class="type">TreeMember</span> {
+    <span class="keyword">var</span> children: [<span class="type">TreeMember</span>]
+    
+    <span class="keyword">init</span>(children: [<span class="type">TreeMember</span>]) {
+        <span class="keyword">self</span>.<span class="property">children</span> = children
+        <span class="keyword">super</span>.<span class="call">init</span>()
+    }
+}
+
+<span class="keyword">class</span> Leaf: <span class="type">TreeMember</span> {
+    <span class="keyword">var</span> id: <span class="type">String</span>
+    
+    <span class="keyword">init</span>(id: <span class="type">String</span>) {
+        <span class="keyword">self</span>.<span class="property">id</span> = id
+        <span class="keyword">super</span>.<span class="call">init</span>()
+    }
+}</code></pre>
+            </section>
             <div class="name">Depth First Traversal</div>
             <section class="box" id="results" style="display: block;">
-                <pre><code><span class="comment">// TODO: Implement this</span></code></pre>
+                <pre><code><span class="keyword">func</span> traverseTree(root: <span class="type">TreeMember</span>) -> [<span class="type">Leaf</span>] {
+    <span class="keyword">return</span> root <span class="keyword">is</span> <span class="type">Leaf</span> ? [root <span class="keyword">as</span>! <span class="type">Leaf</span>] : (root <span class="keyword">as</span>! <span class="type">Node</span>).<span class="property">children</span>.<span class="property">lazy</span>.<span class="call">flatMap</span>(traverseTree)
+}</code></pre>
             </section>
             <div class="name">Breadth First Traversal</div>
             <section class="box" id="results" style="display: block;">
