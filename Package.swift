@@ -18,6 +18,7 @@ let package = Package(
         .target(name: "GCDRecursive"),
         .target(name: "ProjectEulerProblemFive"),
         .target(name: "ProjectEulerProblemOne"),
+        .target(name: "ProjectEulerProblemSix"),
     ],
     swiftLanguageVersions: [.v5]
 )
