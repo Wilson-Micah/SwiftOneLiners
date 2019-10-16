@@ -1,0 +1,6 @@
+/// Largest Palindrome Product
+func largestPalindromProduct(digitSize: Int) -> Int {
+	return { context in return { value, _ in return value.2 }({ _ in context.move() }({ while "\(context.pointee.0 * context.pointee.1)" != String("\(context.pointee.0 * context.pointee.1)".reversed()) || context.pointee.0 * context.pointee.3 > context.pointee.2 { { a, b, c, d, e in context.pointee = (a, b, "\(context.pointee.0 * context.pointee.1)" == String("\(context.pointee.0 * context.pointee.1)".reversed()) && context.pointee.0 * context.pointee.1 > c ? context.pointee.0 * context.pointee.1 : c, d, e) }(context.pointee.1 == context.pointee.4 ? context.pointee.0 - 1 : context.pointee.0, context.pointee.1 > context.pointee.4 ? context.pointee.1 - 1 : Int((0..<digitSize).map({ _ in "9" }).joined())!, context.pointee.2, context.pointee.3, context.pointee.4) } }()), context.deallocate()) }({ context in return { _ in context }(context.initialize(to: (Int((0..<digitSize).map({ _ in "9" }).joined())!, Int((0..<digitSize).map({ _ in "9" }).joined())!, 0, Int((0..<digitSize).map({ _ in "9" }).joined())!, Int("1" + (0..<digitSize-1).map({ _ in "0" }).joined())!))) }(UnsafeMutablePointer<(Int, Int, Int, Int, Int)>.allocate(capacity: 1)))
+}
+
+print(largestPalindromProduct(digitSize: 3))
