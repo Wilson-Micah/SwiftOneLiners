@@ -23,6 +23,7 @@ let package = Package(
         .target(name: "ProjectEulerProblemFive"),
         .target(name: "ProjectEulerProblemOne"),
         .target(name: "ProjectEulerProblemSix"),
+        .target(name: "ProjectEulerProblemTwentyTwo"),
     ],
     swiftLanguageVersions: [.v5]
 )
