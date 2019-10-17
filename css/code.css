@@ -1,3 +1,8 @@
+pre {
+    background-color: #252626;
+    height: auto;
+    padding-right: 20px;
+}
 
 @media screen and (prefers-color-scheme: dark) {
     pre {
