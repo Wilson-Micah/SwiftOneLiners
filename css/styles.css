@@ -68,7 +68,7 @@ body * {
     display:block;
     border-radius: 8px;
     width:100%;
-    max-width: 1200px;
+    max-width: 1000pt;
 }
 
 @media screen and (prefers-color-scheme: dark) {
