@@ -9,6 +9,7 @@ let package = Package(
     ],
     targets: [
 		.target(name: "Anagrams"),
+        .target(name: "BreadthFirstTraversal"),
         .target(name: "DepthFirstTraversal"),
 		.target(name: "DuplicateCharacters"),
         .target(name: "EvenFibonacciNumbers"),
