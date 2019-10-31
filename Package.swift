@@ -8,8 +8,10 @@ let package = Package(
     dependencies: [
     ],
     targets: [
+		.target(name: "Anagrams"),
         .target(name: "BreadthFirstTraversal"),
         .target(name: "DepthFirstTraversal"),
+		.target(name: "DuplicateCharacters"),
         .target(name: "EvenFibonacciNumbers"),
         .target(name: "FibonacciIterative"),
         .target(name: "FibonacciRecursive"),
@@ -17,6 +19,8 @@ let package = Package(
         .target(name: "GCDIterativeImproved"),
         .target(name: "GCDIterativeOriginal"),
         .target(name: "GCDRecursive"),
+		.target(name: "LargestPalindromeProduct"),
+		.target(name: "Palindrome"),
         .target(name: "ProjectEulerProblemFive"),
         .target(name: "ProjectEulerProblemOne"),
         .target(name: "ProjectEulerProblemSix"),
