@@ -8,6 +8,7 @@ let package = Package(
     dependencies: [
     ],
     targets: [
+        .target(name: "BreadthFirstTraversal"),
         .target(name: "DepthFirstTraversal"),
         .target(name: "EvenFibonacciNumbers"),
         .target(name: "FibonacciIterative"),
