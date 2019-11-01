@@ -1,6 +1,6 @@
 // GCD - Euclidean Algorithm
 func gcd(_ a: Int, _ b: Int) -> Int {
-    return b == 0 ? a : gcd(b, a % b)
+    b == 0 ? a : gcd(b, a % b)
 }
 
 print(gcd(45, 333)) // 9

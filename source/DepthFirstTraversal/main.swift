@@ -27,7 +27,7 @@ class Leaf: TreeMember {
 // Depth First Traversal
 
 func traverseTree(root: TreeMember) -> [Leaf] {
-    return root is Leaf ? [root as! Leaf] : (root as! Node).children.lazy.flatMap(traverseTree)
+    root is Leaf ? [root as! Leaf] : (root as! Node).children.lazy.flatMap(traverseTree)
 }
 
 let parent = Node.init(children: [Node(children: [Leaf(id: "0"), Leaf(id: "1")]), Leaf(id: "2"), Node(children: [Node(children: [Leaf(id: "3")])])])
